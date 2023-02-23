@@ -7,9 +7,6 @@ class Intern extends Employee {
   constructor(name, id, email, school) {
     super(name, id, email);
     this.school = school;
-    if (!this.school || typeof this.school !== "string") {
-      throw new Error("Please indicate your school name.");
-    }
   }
 
   getSchool() {

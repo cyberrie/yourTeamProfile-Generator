@@ -8,10 +8,6 @@ class Engineer extends Employee {
     // inherited from parent
     super(name, id, email);
     this.github = github;
-    // validate github
-    if (!this.github || typeof this.github !== "string") {
-      throw new Error("Please include your GitHub username.");
-    }
   }
 
   getGithub() {
