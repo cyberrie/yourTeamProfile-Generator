@@ -87,6 +87,41 @@ function addIntern() {
 }
 
 // add engineer
+function addEngineer() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "Name:",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "Engineer ID:",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Email address:",
+      },
+      {
+        type: "input",
+        name: "github",
+        message: "GitHub Username:",
+      },
+    ])
+    .then((answers) => {
+      const engineer = new Engineer(
+        answers.name,
+        answers.id,
+        answers.email,
+        answers.github
+      );
+      teamMembers.push(engineer);
+      promptUser();
+    });
+}
 
 // function to choose who to add next
 function promptUser() {
