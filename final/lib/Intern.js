@@ -25,16 +25,16 @@ class Intern extends Employee {
   }
 
   // for testing purposes
-  printInfo() {
-    console.log(`Name: ${this.name}`);
-    console.log(`Id: ${this.id}`);
-    console.log(`Email: ${this.email}`);
-    console.log(`School: ${this.school}`);
-  }
+  // printInfo() {
+  //   console.log(`Name: ${this.name}`);
+  //   console.log(`Id: ${this.id}`);
+  //   console.log(`Email: ${this.email}`);
+  //   console.log(`School: ${this.school}`);
+  // }
 }
 // export
 module.exports = Intern;
 
 // for testing purposes
-let intern = new Intern("Mark", 121, "mark.test@gmail.com", "Berkley");
-console.log(intern);
+// let intern = new Intern("Mark", 121, "mark.test@gmail.com", "Berkley");
+// console.log(intern);

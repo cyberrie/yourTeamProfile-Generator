@@ -26,22 +26,22 @@ class Engineer extends Employee {
   }
 
   // for testing purposes
-  printInfo() {
-    console.log(`Name: ${this.name}`);
-    console.log(`Id: ${this.id}`);
-    console.log(`Email: ${this.email}`);
-    console.log(`Github: ${this.github}`);
-  }
+  // printInfo() {
+  //   console.log(`Name: ${this.name}`);
+  //   console.log(`Id: ${this.id}`);
+  //   console.log(`Email: ${this.email}`);
+  //   console.log(`Github: ${this.github}`);
+  // }
 }
 
 //export Engineer
 module.exports = Engineer;
 
 // for testing purposes
-let engineer = new Engineer(
-  "Helena",
-  121,
-  "helena.gilja@gmail.com",
-  "cyberrie"
-);
-console.log(engineer);
+// let engineer = new Engineer(
+//   "Helena",
+//   121,
+//   "helena.gilja@gmail.com",
+//   "cyberrie"
+// );
+// console.log(engineer);

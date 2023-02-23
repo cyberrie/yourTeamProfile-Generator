@@ -30,16 +30,16 @@ class Manager extends Employee {
   }
 
   // for testing purposes
-  printInfo() {
-    console.log(`Name: ${this.name}`);
-    console.log(`Id: ${this.id}`);
-    console.log(`Email: ${this.email}`);
-    console.log(`Office Number: ${this.officeNumber}`);
-  }
+  // printInfo() {
+  //   console.log(`Name: ${this.name}`);
+  //   console.log(`Id: ${this.id}`);
+  //   console.log(`Email: ${this.email}`);
+  //   console.log(`Office Number: ${this.officeNumber}`);
+  // }
 }
 
 module.exports = Manager;
 
 // for testing purposes
-let manager = new Manager("Helena", 121, "helena.gilja@gmail.com", 300);
-console.log(manager);
+// let manager = new Manager("Helena", 121, "helena.gilja@gmail.com", 300);
+// console.log(manager);

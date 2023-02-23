@@ -55,5 +55,5 @@ class Employee {
 module.exports = Employee;
 
 // for testing purposes
-let employee = new Employee("Helena", 100, "helena.gilja@gmail.com");
-console.log(employee);
+// let employee = new Employee("Helena", 100, "helena.gilja@gmail.com");
+// console.log(employee);
