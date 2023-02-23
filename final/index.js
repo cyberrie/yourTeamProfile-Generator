@@ -4,10 +4,9 @@ const fs = require("fs");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-
 const OUTPUT_DIR = path.resolve(__dirname, "output");
+const renderTeam = require("./src/page-template.js");
 
-const render = require("./src/page-template.js");
 // create an empty array storing all the team info
 const teamMembers = [];
 
@@ -151,8 +150,11 @@ function promptUser() {
 
         // if finish building the team, render info on the page
         case "Finish building the team":
-          const html = render(teamMembers);
+          // call renderTeam and pass in the array containing all employee objects, teamMembers
+          const html = renderTeam(teamMembers);
+          // Create an HTML file using the HTML returned from the `render` function
           const outputPath = path.join(OUTPUT_DIR, "team.html");
+          // Write it to a file named `team.html` in the `output` folder, outputPath
           fs.writeFile(outputPath, html, (err) => {
             if (err) throw err;
             console.log(`Team profile page generated at ${outputPath}`);
@@ -166,9 +168,3 @@ function promptUser() {
 
 // Call addManager to start the process
 addManager();
-
-// await fs.writeFile("team.html", teamProfiles);
-// // Message to the user when it ends
-// console.log(
-//   "Thank you for your input, your Team Profile Page has now been generated."
-// );
