@@ -8,6 +8,19 @@ class Manager extends Employee {
     this.officeNumber = officeNumber;
   }
 
+  // validation
+  validateOfficeNumber() {
+    if (
+      !this.officeNumber ||
+      typeof this.officeNumber !== "number" ||
+      this.officeNumber < 1
+    ) {
+      throw new Error(
+        "Office Number must be recorded and cannot be less than 1."
+      );
+    }
+  }
+
   getRole() {
     return "Manager";
   }
