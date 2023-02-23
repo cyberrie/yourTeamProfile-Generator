@@ -9,6 +9,13 @@ class Intern extends Employee {
     this.school = school;
   }
 
+  // validation methods
+  validateSchool() {
+    if (!this.school || typeof this.school !== "string") {
+      throw new Error("Please state the name of your school.");
+    }
+  }
+
   getSchool() {
     return this.school;
   }
