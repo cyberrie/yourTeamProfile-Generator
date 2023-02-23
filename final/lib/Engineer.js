@@ -10,6 +10,13 @@ class Engineer extends Employee {
     this.github = github;
   }
 
+  // validation methods
+  validateGithub() {
+    if (!this.github || typeof this.email !== "string") {
+      throw new Error("Please include your GitHub username.");
+    }
+  }
+
   getGithub() {
     return this.github;
   }
