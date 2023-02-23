@@ -3,7 +3,7 @@ const generateTeam = (team) => {
   // creates the manager html
   const generateManager = (manager) => {
     return `
-        <div class="card employee-card">
+        <div class="card employee-card col-3">
         <div class="card-header">
         <img
         style="height: 50px; width: 50px; margin-bottom: 10px"
@@ -27,7 +27,7 @@ const generateTeam = (team) => {
   // creates the html for engineers
   const generateEngineer = (engineer) => {
     return `
-        <div class="card employee-card">
+        <div class="card employee-card col-3">
     <div class="card-header">
     <img
     style="height: 50px; width: 50px; margin-bottom: 10px"
@@ -51,7 +51,7 @@ const generateTeam = (team) => {
   // creates the html for interns
   const generateIntern = (intern) => {
     return `
-        <div class="card employee-card">
+        <div class="card employee-card col-3">
     <div class="card-header">
     <img
     style="height: 50px; width: 50px; margin-bottom: 10px"
