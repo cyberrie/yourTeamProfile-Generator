@@ -1,4 +1,4 @@
-// TODO: Write code to define and export the Employee class
+// Define and export the Employee class
 class Employee {
   // class constructor
   constructor(name, id, email) {
@@ -31,5 +31,6 @@ class Employee {
 // export Employee
 module.exports = Employee;
 
+// test
 let employee = new Employee("Helena", 100, "helena.gilja@gmail.com");
 console.log(employee);
