@@ -1,10 +1,56 @@
+body {
+  background-color: #cdd4db;
+}
+
 .text-center {
   font-size: 8rem !important;
-  font-family: fantasy;
+  font-family: "Courier New", Courier, monospace;
+  color: whitesmoke;
   font-weight: 800;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
 }
 
 .jumbotron {
-  background-color: antiquewhite;
+  background: linear-gradient(rgb(8, 2, 49), #cdd4db);
+}
+
+/* cards flex */
+.justify-content-center {
+  margin-top: 64px;
+  gap: 64px;
+}
+
+/* cards styling */
+.employee-card {
+  border-radius: 10px;
+
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.286);
+}
+
+.card-header:first-child {
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(rgb(215, 144, 144), rgb(233, 195, 218));
+  text-align: center;
+  color: rgb(8, 2, 49);
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 0;
+}
+
+.card-body {
+  background: linear-gradient(
+    rgba(233, 195, 218, 0.615),
+    rgba(233, 195, 218, 0.4)
+  );
+  color: rgb(8, 2, 49);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+.list-group-item {
+  background-color: #cdd4db4f;
 }
