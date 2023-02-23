@@ -3,28 +3,34 @@ body {
 }
 
 .text-center {
-  font-size: 8rem !important;
+  font-size: 6rem !important;
   font-family: "Courier New", Courier, monospace;
   color: whitesmoke;
   font-weight: 800;
   letter-spacing: 2px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.767);
 }
 
 .jumbotron {
   background: linear-gradient(rgb(8, 2, 49), #cdd4db);
+  margin: 0 0 100px 0;
 }
 
 /* cards flex */
 .justify-content-center {
-  margin-top: 64px;
-  gap: 64px;
+  margin: 20px 0 20px 0;
+  gap: 48px;
 }
 
 /* cards styling */
 .employee-card {
   border-radius: 10px;
   padding: 0 !important;
-  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.286);
+  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.552);
+}
+
+.list-group {
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.396);
 }
 
 .card-header:first-child {
@@ -48,7 +54,6 @@ body {
   );
   color: rgb(8, 2, 49);
   font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
 }
 
 .list-group-item {
