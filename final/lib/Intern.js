@@ -7,12 +7,8 @@ class Intern extends Employee {
   constructor(name, id, email, school) {
     super(name, id, email);
     this.school = school;
-  }
-
-  // validation methods
-  validateSchool() {
     if (!this.school || typeof this.school !== "string") {
-      throw new Error("Please state the name of your school.");
+      throw new Error("Please indicate your school name.");
     }
   }
 

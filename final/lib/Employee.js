@@ -3,30 +3,28 @@ class Employee {
   // class constructor
   constructor(name, id, email) {
     this.name = name;
-    this.id = id;
-    this.email = email;
-  }
 
-  // validation methods
-  validateName() {
+    // validate name
     if (!this.name || typeof this.name !== "string") {
       throw new Error("Name cannot remain empty. Please input your name.");
     }
-  }
 
-  validateId() {
-    if (!this.id || typeof this.id !== "number" || this.id < 1) {
-      throw new Error("ID number must be recorded and cannot be less than 1.");
+    this.id = id;
+    // validate id
+    if (!this.id || typeof this.id !== "number" || this.id < 100000) {
+      throw new Error(
+        "ID number must be recorded and it has to be at least 6 digits long."
+      );
     }
-  }
 
-  vaidateEmail() {
+    this.email = email;
+    // validate email
     if (
       !this.email ||
       typeof this.email !== "string" ||
       !this.email.includes("@")
     ) {
-      throw new Error("Please insert a valid email");
+      throw new Error("Please insert a valid email.");
     }
   }
 
@@ -53,7 +51,3 @@ class Employee {
 
 // export Employee
 module.exports = Employee;
-
-// for testing purposes
-// let employee = new Employee("Helena", 100, "helena.gilja@gmail.com");
-// console.log(employee);

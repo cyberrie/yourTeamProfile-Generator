@@ -6,17 +6,14 @@ class Manager extends Employee {
   constructor(name, id, email, officeNumber) {
     super(name, id, email);
     this.officeNumber = officeNumber;
-  }
-
-  // validation
-  validateOfficeNumber() {
+    // validate office number
     if (
       !this.officeNumber ||
       typeof this.officeNumber !== "number" ||
-      this.officeNumber < 1
+      this.officeNumber < 100
     ) {
       throw new Error(
-        "Office Number must be recorded and cannot be less than 1."
+        "Office Number must be recorded and it has to be at least 3 digts long"
       );
     }
   }
@@ -39,7 +36,3 @@ class Manager extends Employee {
 }
 
 module.exports = Manager;
-
-// for testing purposes
-// let manager = new Manager("Helena", 121, "helena.gilja@gmail.com", 300);
-// console.log(manager);
