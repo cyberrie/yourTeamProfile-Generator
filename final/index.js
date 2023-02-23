@@ -49,6 +49,46 @@ function addManager() {
     });
 }
 
+// add intern
+function addIntern() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "Name:",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "Intern ID:",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Email address:",
+      },
+      {
+        type: "input",
+        name: "school",
+        message: "Office School:",
+      },
+    ])
+    .then((answers) => {
+      const intern = new Intern(
+        answers.name,
+        answers.id,
+        answers.email,
+        answers.school
+      );
+      teamMembers.push(intern);
+      promptUser();
+    });
+}
+
+// add engineer
+
+// function to choose who to add next
 function promptUser() {
   inquirer
     .prompt([
