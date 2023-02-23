@@ -23,7 +23,7 @@ body {
 /* cards styling */
 .employee-card {
   border-radius: 10px;
-
+  padding: 0 !important;
   box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.286);
 }
 
