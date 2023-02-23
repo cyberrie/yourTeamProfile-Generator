@@ -18,6 +18,7 @@ class Engineer extends Employee {
     return "Engineer";
   }
 
+  // for testing purposes
   printInfo() {
     console.log(`Name: ${this.name}`);
     console.log(`Id: ${this.id}`);
@@ -29,6 +30,7 @@ class Engineer extends Employee {
 //export Engineer
 module.exports = Engineer;
 
+// for testing purposes
 let engineer = new Engineer(
   "Helena",
   121,

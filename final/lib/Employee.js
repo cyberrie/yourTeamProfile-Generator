@@ -31,6 +31,6 @@ class Employee {
 // export Employee
 module.exports = Employee;
 
-// test
+// for testing purposes
 let employee = new Employee("Helena", 100, "helena.gilja@gmail.com");
 console.log(employee);
