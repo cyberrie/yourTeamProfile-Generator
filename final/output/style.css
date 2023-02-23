@@ -1,0 +1,10 @@
+.text-center {
+  font-size: 8rem !important;
+  font-family: fantasy;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.jumbotron {
+  background-color: antiquewhite;
+}
