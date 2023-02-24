@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Usage](#usage)
+- [Output Page Screenshot](#output-page-screenshot)
 - [Application Demo](#application-demo)
 - [Links](#links)
 - [Built with](#built-with)
@@ -12,7 +13,6 @@
 - [Directions for future development](#directions-for-future-development)
 - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -74,6 +74,12 @@ node index.js
 ```bash
 npm run test
 ```
+
+## Output Page Screenshot
+
+Below image represents the application's output page once following the user input:
+
+![]()
 
 ## Application Demo
 
