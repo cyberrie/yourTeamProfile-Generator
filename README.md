@@ -7,9 +7,8 @@
 - [Usage](#usage)
 - [Output Page Screenshot](#output-page-screenshot)
 - [Application Demo](#application-demo)
-- [Links](#links)
 - [Built with](#built-with)
-- [What I learned](#what-I-learned)
+- [What I learned](#what-i-learned)
 - [Directions for future development](#directions-for-future-development)
 - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -79,15 +78,15 @@ npm run test
 
 Below image represents the application's output page once following the user input:
 
-![]()
+- ![Team Profile Generator HTML Output](./final/output/output%20assets/team.html-screenshot.png)
 
 ## Application Demo
 
 Open the following link to view App Demo:
 
-- [Team Profile Generator]()
+- [Team Profile Generator](https://drive.google.com/file/d/1xLqoTUv84jBp6aRmcj81XzrplRk0anPL/view?usp=sharing)
 
-## Built with...
+## Built with
 
 - JavaScript
 
@@ -103,9 +102,19 @@ Open the following link to view App Demo:
 
 ## What I learned
 
+This project has solidified my skills in the below:
+
+- Identification and implementation of prototypal inheritance in JavaScript
+
+- Creating constructor functions to instantiate multiple objects of similar type
+
+- Ensuring code functionality using test-driven development (including mock-testing when working with Server APIs and their use cases)
+
 ## Directions for future development
 
 Things for the future may include:
+
+- Integration with Team's Daily Planner and hyperlinks at the bottom of each card for an overview of tasks (completed & TODO) and any upcoming project deadlines
 
 ## Useful Resources
 
@@ -124,5 +133,3 @@ Things for the future may include:
 - Starter code was supplied for this project, including testing files and a template-page file. Template page has been changed and styled.
 
 - GitHub - [cyberrie](https://github.com/cyberrie)
-
-## Acknowledgements
