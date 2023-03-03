@@ -78,7 +78,7 @@ npm run test
 
 Below image represents the application's output page once following the user input:
 
-![Team Profile Generator HTML Output](./final/output/output%20assets/team.html-screenshot.png)
+![Team Profile Generator HTML Output](./output/output%20assets/team.html-screenshot.png)
 
 ## Application Demo
 
