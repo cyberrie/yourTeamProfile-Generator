@@ -78,7 +78,7 @@ npm run test
 
 Below image represents the application's output page once following the user input:
 
-- ![Team Profile Generator HTML Output](./final/output/output%20assets/team.html-screenshot.png)
+![Team Profile Generator HTML Output](./final/output/output%20assets/team.html-screenshot.png)
 
 ## Application Demo
 
@@ -128,7 +128,7 @@ Things for the future may include:
 
 ## Author
 
-©️ Helena Gilja 2023. All Rights Reserved.
+©️ Helena Gilja 2023.
 
 - Starter code was supplied for this project, including testing files and a template-page file. Template page has been changed and styled.
 
